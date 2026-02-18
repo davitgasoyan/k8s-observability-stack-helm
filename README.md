@@ -57,34 +57,36 @@ Example snippet:
 
 ```yaml
 namespace: logging
+
 grafana:
-adminUser: admin
-adminPassword: SuperSecret123
-nodePort: 32000
-tls:
-crt: "<base64 cert>"
-key: "<base64 key>"
-storage:
-nfsServer: "10.0.0.10"
-nfsPath: "/export/grafana"
-size: 5Gi
+    adminUser: admin
+    adminPassword: SuperSecret123
+    nodePort: 32000
+    tls:
+        crt: "<base64 cert>"
+        key: "<base64 key>"
+    storage:
+        nfsServer: "10.0.0.10"
+        nfsPath: "/export/grafana"
+        size: 5Gi
 
 prometheus:
-storage:
-nfsServer: "10.0.0.10"
-nfsPath: "/export/prometheus"
-size: 10Gi
+    storage:
+        nfsServer: "10.0.0.10"
+        nfsPath: "/export/prometheus"
+        size: 10Gi
+
 scrapeTargets:
-kubelet:
-- "10.0.0.1:10255"
-kubeStateMetrics:
-- "10.0.0.1:32119"
+    kubelet:
+    - "10.0.0.1:10255"
+    kubeStateMetrics:
+    - "10.0.0.1:32119"
 
 loki:
-storage:
-nfsServer: "10.0.0.10"
-nfsPath: "/export/loki"
-size: 5Gi
+    storage:
+        nfsServer: "10.0.0.10"
+        nfsPath: "/export/loki"
+        size: 5Gi
 ```
 
 ### 3. Install the chart
