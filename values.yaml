@@ -1,0 +1,37 @@
+namespace: logging
+
+cadvisor:
+  image: gcr.io/cadvisor/cadvisor:latest
+
+grafana:
+  image: grafana/grafana:10.4.1
+  nodePort: 32000
+  adminUser: 1354654
+  adminPassword: 3515351
+  tls:
+    crt: ""
+    key: ""
+  storage:
+    size: 5Gi
+    nfsServer: 10.0.0.1
+    nfsPath: /export/grafana
+
+loki:
+  image: grafana/loki:2.9.0
+  storage:
+    size: 5Gi
+    nfsServer: 10.0.0.1
+    nfsPath: /export/loki
+
+prometheus:
+  image: prom/prometheus:latest
+  storage:
+    size: 10Gi
+    nfsServer: 10.0.0.1
+    nfsPath: /export/prometheus
+
+scrapeTargets:
+  kubelet:
+    - "127.0.0.1"
+  kubeStateMetrics:
+    - "127.0.0.1"
