@@ -32,16 +32,16 @@ This Helm chart deploys a complete Kubernetes observability stack with **Grafana
 
 ## Installation
 
-### 1. Clone this repository
+### 1. Add the repository
 
 ```bash
-git clone https://github.com/davitgasoyan/k8s-observability-stack-helm
-cd k8s-observability-stack-helm
+helm repo add obs-stack https://davitgasoyan.github.io/k8s-observability-stack-helm
+helm repo update
 ```
 
 ### 2. Customize values.yaml
 
-Edit the values.yaml file to specify:
+Create values.yaml file to specify:
 
 * namespace: Kubernetes namespace for all resources
 
@@ -92,7 +92,7 @@ loki:
 ### 3. Install the chart
 
 ```bash
-helm install obs-stack ./ -f values.yaml
+helm install `<release-name>` obs-stack/k8s-observability-stack-helm --values ./values.yaml
 ```
 
 ### 4. Verify installation
