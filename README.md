@@ -123,3 +123,4 @@ kubectl get svc --namespace logging
 helm uninstall k8s-observability-stack -n logging
 kubectl delete ns logging
 ```
+
