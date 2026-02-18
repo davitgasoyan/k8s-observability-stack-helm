@@ -10,6 +10,6 @@ entries:
     name: k8s-observability-stack-helm
     type: application
     urls:
-    - https://davitgasoyan.github.io/k8s-observability-stack-helm/k8s-observability-stack-helm-0.1.0.tgz
-    version: 0.1.0
+    - https://davitgasoyan.github.io/k8s-observability-stack-helm/k8s-observability-stack-helm-0.1.1.tgz
+    version: 0.1.1
 generated: "2026-02-18T17:09:16.52312157+04:00"
