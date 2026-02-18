@@ -89,9 +89,10 @@ loki:
         size: 5Gi
 ```
 
-### 3. Install the chart
+### 3. Create the namespace and install the chart
 
 ```bash
+kubectl create namespace logging
 helm install `<release-name>` obs-stack/k8s-observability-stack-helm --values ./values.yaml
 ```
 

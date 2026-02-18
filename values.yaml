@@ -6,8 +6,8 @@ cadvisor:
 grafana:
   image: grafana/grafana:10.4.1
   nodePort: 32000
-  adminUser: YWRtaW4K
-  adminPassword: YWRtaW4K
+  adminUser: admin 
+  adminPassword: admin 
   tls:
     crt: ""
     key: ""
