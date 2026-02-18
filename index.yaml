@@ -3,13 +3,13 @@ entries:
   k8s-observability-stack-helm:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2026-02-18T17:09:16.574205127+04:00"
+    created: "2026-02-18T17:49:48.155128169+04:00"
     description: Kubernetes observability stack with Grafana, Loki, Prometheus, and
       cAdvisor
-    digest: 6a6d7a605cf69b78caac1b935463b0682138fc8f183c4859fddb17da4f16bae2
+    digest: 24496879ce598923921810b7dcc3591fc8c4c84dec09038e93ee82da0979d71d
     name: k8s-observability-stack-helm
     type: application
     urls:
     - https://davitgasoyan.github.io/k8s-observability-stack-helm/k8s-observability-stack-helm-0.1.1.tgz
     version: 0.1.1
-generated: "2026-02-18T17:09:16.52312157+04:00"
+generated: "2026-02-18T17:49:48.15454217+04:00"
